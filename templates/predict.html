@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Attack Prediction</title>
+    <link rel="icon" type="image/x-icon" href="\static\android-chrome-192x192.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Bangers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="\static\stylepredict.css">
+</head>
+
+<body>
+    <p>
+        Enter Your Health Details
+    </p>
+<div class="container">
+
+    <form action="{{url_for('predict')}}" method="post">
+        
+        <label  for="fname">First name:</label>
+        <input class="space" type="text" id="fname" name="fname"><br>
+
+        <label for="lname">Last name:</label>
+        <input class="space" type="text" id="lname" name="lname"><br>
+
+        <label for="age">Age:</label>
+        <input class="space" type="text" id="age" name="age"><br>
+        
+        <div class="space"> 
+            <label for="gender">Gender:</label><br>
+            <input type="radio" name="gender" value="0"> Female<br>
+            <input type="radio" name="gender" value="1"> Male<br>
+        </div>
+
+        <div class="space">
+            <label for="chestpain">Chest pain:</label><br>
+            <input type="radio" name="chestpain" value="0"> Typical angina<br>
+            <input type="radio" name="chestpain" value="1"> atypical angina<br>
+            <input type="radio" name="chestpain" value="2"> non-anginal pain<br>
+            <input type="radio" name="chestpain" value="3"> asymptomatic<br>
+        </div>
+
+        <label for="rbp">Resting blood pressure</label>
+        <input class="space" type="text" name="rbp" id="name"><br>
+
+        <label for="chol">serum cholestoral in mg/dl</label>
+        <input class="space" type="text" name="chol" id="name"><br>
+
+        <div class="space">
+            <label for="fbs">Fasting blood sugar:</label><br>
+            <input type="radio" name="fbs" value="0"> Less than 120mg/dl<br>
+            <input type="radio" name="fbs" value="1"> Greater than 120mg/dl<br>
+        </div>
+
+        <div class="space">
+
+            <label for="recg">Resting Electrocardiag values:</label><br>
+            <input type="radio" name="recg" value="0"> Normal<br>
+            <input type="radio" name="recg" value="1"> having ST-T wave abnormality (T wave inversions and/or ST elevation
+            ordepression of > 0.05 mV)<br>
+            <input type="radio" name="recg" value="2"> showing probable or definite left ventricular hypertrophy by Estes'
+            criteria<br>
+        </div>
+            
+        <label for="hr">Maximum Heart rate acheived</label>
+        <input class="space" type="text" name="hr" id="subject"><br>
+        
+        <div class="space">
+
+            <label for="ani">Exercise induced angina:</label><br>
+            <input type="radio" name="ani" value="0"> No<br>
+            <input type="radio" name="ani" value="1"> yes<br>
+        </div>
+        
+        <label for="oldpeak">Oldpeak : ST depression induced by exercise relative to rest</label>
+        <input class="space" type="text"  name="oldpeak"><br>
+        
+        <div class="space">
+
+            <label for="slope">Slope: the slope of the peak exercise ST segment:</label><br>
+            <input type="radio" name="slope" value="0"> Upsloping<br>
+            <input type="radio" name="slope" value="1"> Flat<br>
+            <input type="radio" name="slope" value="2"> Downsloping<br>
+        </div>
+
+        <div class="space">
+
+            <label for="vessels">Number of major vessels (0-3) colored by flourosopy</label><br>
+            <input type="radio" name="vessels" value="0"> 0<br>
+            <input type="radio" name="vessels" value="1"> 1<br>
+            <input type="radio" name="vessels" value="2"> 2<br>
+            <input type="radio" name="vessels" value="3"> 3<br>
+        </div>
+        <div class="space">
+
+            <label for="thal">Thalassemia Type:</label><br>
+            <input type="radio" name="thal" value="1"> Normal<br>
+            <input type="radio" name="thal" value="2"> Fixed defect<br>
+            <input type="radio" name="thal" value="3"> reversible defect<br>
+        </div>
+        <br>
+        <button class="button" type="submit">predict</button>
+
+    </form>
+</div>
+<img src="\static\docpic2.png" alt="image loading">
+
+
+</body>
+
+</html>

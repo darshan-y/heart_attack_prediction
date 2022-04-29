@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Attack Prediction</title>
+    <link rel="icon" type="image/x-icon" href="\static\android-chrome-192x192.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Kanit:wght@100&display=swap" rel="stylesheet">
+<style>
+    body{
+    background-color: #d5dfda;
+}
+
+pre{
+    margin-left: 100px;
+    font-size: 15px;
+    font-family: 'Kanit',sans-serif;
+    font-weight: bold;
+}
+
+h1{
+    margin-left: 100px;
+    font-family: 'Bangers',cursive;
+}
+
+.button {
+    backface-visibility: hidden;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    white-space: nowrap;
+    background: linear-gradient(110deg, #eee 0%, #e3e3e3 10%, #fff 10%, #fff 25%, #f0f0f0 26%, #fff 26%, #ddd 72.71607012826976%, #eee 96.73444239063463%);
+    border-radius: 100px;
+    border: 1px solid #999;
+    border-width: 1px 1px 1px 1px;
+    padding: 5px 20px 7px 20px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5), 0px 0px 5px rgba(0, 0, 0, 0.25), 0px 0px 2px 4px rgba(0, 0, 0, 0.1);
+    color: #444;
+    font-size: 16px;
+    font-family: Helvetica Neue;
+    font-weight: 900;
+    font-style: normal;
+    text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.3);
+    margin-left: 150px;
+}
+
+.button>div {
+    color: #999;
+    font-size: 10px;
+    font-family: Helvetica Neue;
+    font-weight: initial;
+    font-style: normal;
+    text-align: center;
+    margin: 0px 0px 0px 0px
+}
+
+.button>i {
+    font-size: 1em;
+    border-radius: 0px;
+    border: 0px solid transparent;
+    border-width: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    position: static
+}
+
+.button>.ld {
+    font-size: initial
+}
+
+a{
+    text-decoration: none;
+}
+
+</style>
+</head>
+<body>
+    <h1>Description</h1>
+    <pre>
+        1. age
+
+        2. sex:
+            0 = Female
+            1 = Male
+
+        3. cp: chest pain type
+            Value 1: typical angina
+            Value 2: atypical angina
+            Value 3: non-anginal pain
+            Value 4: asymptomatic
+
+        4. resting blood pressure
+            trestbps: resting blood pressure (in mm Hg on admission to the hospital)
+
+        5. serum cholestoral in mg/dl
+            chol: serum cholestoral in mg/dl
+
+        6. resting electrocardiographic results (values 0,1,2)
+            restecg: resting electrocardiographic results
+            Value 0: normal
+            Value 1: having ST-T wave abnormality (T wave inversions and/or ST elevation or depression of > 0.05 mV)
+            Value 2: showing probable or definite left ventricular hypertrophy by Estes criteria
+
+        7. oldpeak = ST depression induced by exercise relative to rest
+
+        8. maximum heart rate achieved
+
+        9. exercise induced angina
+            exang: exercise induced angina (1 = yes; 0 = no)
+
+       10. the slope of the peak exercise ST segment
+            slope: the slope of the peak exercise ST segment
+            Value 1: upsloping
+            Value 2: flat
+            Value 3: downsloping
+
+       11. number of major vessels (0-3) colored by flourosopy
+            thal: 1 = normal; 
+            thal:  2 = fixed defect; 
+            thal:  3 = reversable defect
+            Thalassemia (thal-uh-SEE-me-uh) is an inherited blood disorder that causes your body to have less hemoglobin than normal. Hemoglobin enables red blood cells to carry oxygen. Thalassemia can cause anemia, leaving you fatigued. If you have mild thalassemia, you might not need treatment.
+    </pre>
+    <button class="button"><a href="/">Back</a></button>
+</body>
+</html>
