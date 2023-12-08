@@ -1,1 +1,1 @@
-# herat_attack_prediction_project
+# heart_attack_prediction_project
